@@ -1,0 +1,763 @@
+{
+  "agents": [
+    {
+      "id": "coder",
+      "name": "Stack",
+      "emoji": "⚡",
+      "role": "Coder Agent - Development & Deployment",
+      "status": "active",
+      "lastActivity": "2026-02-04T11:26:02.939Z",
+      "sessionCount": 1,
+      "totalTokens": 699196,
+      "totalCost": 0.7
+    },
+    {
+      "id": "hook",
+      "name": "Hook",
+      "emoji": "✍️",
+      "role": "Content Writer - Scripts, Posts & Copy",
+      "status": "idle",
+      "lastActivity": "2026-02-04T11:18:32.971Z",
+      "sessionCount": 3,
+      "totalTokens": 931762,
+      "totalCost": 1.26
+    },
+    {
+      "id": "main",
+      "name": "TARS",
+      "emoji": "🧠",
+      "role": "Main Agent - Orchestrator & Decision Maker",
+      "status": "active",
+      "lastActivity": "2026-02-04T11:25:34.724Z",
+      "sessionCount": 11,
+      "totalTokens": 310674101,
+      "totalCost": 271.07
+    }
+  ],
+  "pipeline": {
+    "activeVideo": "youtube-pipeline",
+    "title": "I Built an AI YouTube Factory (It Makes My Videos For Me)",
+    "startedAt": "2026-02-04T11:03:00Z",
+    "steps": [
+      {
+        "id": "1_idea_pitched",
+        "label": "Idea",
+        "agent": "TARS",
+        "status": "done",
+        "completedAt": "2026-02-04T11:03:00Z",
+        "note": null
+      },
+      {
+        "id": "2_idea_approved",
+        "label": "Approved",
+        "agent": "Jess",
+        "status": "done",
+        "completedAt": "2026-02-04T11:05:00Z",
+        "note": null
+      },
+      {
+        "id": "3_script_written",
+        "label": "Script",
+        "agent": "Hook",
+        "status": "done",
+        "completedAt": "2026-02-04T11:08:00Z",
+        "note": null
+      },
+      {
+        "id": "4_script_approved",
+        "label": "Review",
+        "agent": "Jess",
+        "status": "waiting",
+        "completedAt": null,
+        "note": "Sent to Jess for review"
+      },
+      {
+        "id": "5_broll_created",
+        "label": "B-Roll",
+        "agent": "Hook",
+        "status": "pending",
+        "completedAt": null,
+        "note": null
+      },
+      {
+        "id": "6_thumbnail_headlines_proposed",
+        "label": "Headlines",
+        "agent": "Hook",
+        "status": "pending",
+        "completedAt": null,
+        "note": null
+      },
+      {
+        "id": "7_thumbnail_headline_approved",
+        "label": "Headline OK",
+        "agent": "Jess",
+        "status": "pending",
+        "completedAt": null,
+        "note": null
+      },
+      {
+        "id": "8_thumbnail_generated",
+        "label": "Thumbnail",
+        "agent": "Stack",
+        "status": "pending",
+        "completedAt": null,
+        "note": null
+      },
+      {
+        "id": "9_synced_notion_drive",
+        "label": "Synced",
+        "agent": "TARS",
+        "status": "pending",
+        "completedAt": null,
+        "note": null
+      }
+    ]
+  },
+  "driveContent": [
+    {
+      "name": "YouTube/OpenClaw Subagents",
+      "items": [
+        {
+          "name": "OpenClaw Subagents",
+          "id": "1-sLdMsAxcAW_YKQ1d90qkmrupDF2rZDx",
+          "type": "doc",
+          "url": "https://docs.google.com/document/d/1-sLdMsAxcAW_YKQ1d90qkmrupDF2rZDx/edit",
+          "path": "YouTube/OpenClaw Subagents"
+        },
+        {
+          "name": "Script",
+          "id": "10tCZDsaVP-QXvZU4u0yv5eExAOVRWed64Je2cw2zezw",
+          "type": "doc",
+          "url": "https://docs.google.com/document/d/10tCZDsaVP-QXvZU4u0yv5eExAOVRWed64Je2cw2zezw/edit",
+          "path": "YouTube/OpenClaw Subagents/Script"
+        },
+        {
+          "name": "AGENTS.md",
+          "id": "1FY5siXKGt-eVo12WQCmRv11Djofp2bTt",
+          "type": "doc",
+          "url": "https://docs.google.com/document/d/1FY5siXKGt-eVo12WQCmRv11Djofp2bTt/edit",
+          "path": "YouTube/OpenClaw Subagents/AGENTS.md"
+        },
+        {
+          "name": "SOUL.md",
+          "id": "1u0Cmz0VxbR4G5qeIPG4L_ADRWxp94x7m",
+          "type": "doc",
+          "url": "https://docs.google.com/document/d/1u0Cmz0VxbR4G5qeIPG4L_ADRWxp94x7m/edit",
+          "path": "YouTube/OpenClaw Subagents/SOUL.md"
+        },
+        {
+          "name": "B-Roll Doc",
+          "id": "1fn_gfwJtRNthqKOVw5RbOq3execD8VcIyNKXUUntUZQ",
+          "type": "doc",
+          "url": "https://docs.google.com/document/d/1fn_gfwJtRNthqKOVw5RbOq3execD8VcIyNKXUUntUZQ/edit",
+          "path": "YouTube/OpenClaw Subagents/B-Roll Doc"
+        },
+        {
+          "name": "Thumbnail",
+          "id": "1Th8k0go0aNG8m2VuRmrDOOK9C8moKF6o",
+          "type": "doc",
+          "url": "https://docs.google.com/document/d/1Th8k0go0aNG8m2VuRmrDOOK9C8moKF6o/edit",
+          "path": "YouTube/OpenClaw Subagents/Thumbnail"
+        }
+      ]
+    },
+    {
+      "name": "YouTube/How OpenClaw Works",
+      "items": [
+        {
+          "name": "How OpenClaw Works",
+          "id": "1rWHgaViYVFZMdXHgEZVB0sOc4KBchMng",
+          "type": "doc",
+          "url": "https://docs.google.com/document/d/1rWHgaViYVFZMdXHgEZVB0sOc4KBchMng/edit",
+          "path": "YouTube/How OpenClaw Works"
+        },
+        {
+          "name": "Script",
+          "id": "1oCTXBJbcwVjbq38XZlYwcf5sim2Kpd8TiYMSXzAGcWY",
+          "type": "doc",
+          "url": "https://docs.google.com/document/d/1oCTXBJbcwVjbq38XZlYwcf5sim2Kpd8TiYMSXzAGcWY/edit",
+          "path": "YouTube/How OpenClaw Works/Script"
+        }
+      ]
+    },
+    {
+      "name": "LinkedIn/01 - How OpenClaw Works (Architecture)",
+      "items": [
+        {
+          "name": "01 - How OpenClaw Works (Architecture)",
+          "id": "1yHRVuu_yuneC-1-857Y0WQd_XTIQdL_A",
+          "type": "doc",
+          "url": "https://docs.google.com/document/d/1yHRVuu_yuneC-1-857Y0WQd_XTIQdL_A/edit",
+          "path": "LinkedIn/01 - How OpenClaw Works (Architecture)"
+        },
+        {
+          "name": "Post",
+          "id": "1DFwDkExWwefwPqJVyj79VrviOGx-0efNDY4cA5MxkOs",
+          "type": "doc",
+          "url": "https://docs.google.com/document/d/1DFwDkExWwefwPqJVyj79VrviOGx-0efNDY4cA5MxkOs/edit",
+          "path": "LinkedIn/01 - How OpenClaw Works (Architecture)/Post"
+        },
+        {
+          "name": "Photo",
+          "id": "1qXM-m_eimXVbp9EHyRLmbw3A2f8Mq93L",
+          "type": "doc",
+          "url": "https://docs.google.com/document/d/1qXM-m_eimXVbp9EHyRLmbw3A2f8Mq93L/edit",
+          "path": "LinkedIn/01 - How OpenClaw Works (Architecture)/Photo"
+        }
+      ]
+    },
+    {
+      "name": "LinkedIn/02 - Prompt Injection Defense",
+      "items": [
+        {
+          "name": "02 - Prompt Injection Defense",
+          "id": "1LjuRtNgYdOaxtkj6vSi3sjh9hZI4yCu6",
+          "type": "doc",
+          "url": "https://docs.google.com/document/d/1LjuRtNgYdOaxtkj6vSi3sjh9hZI4yCu6/edit",
+          "path": "LinkedIn/02 - Prompt Injection Defense"
+        },
+        {
+          "name": "Post",
+          "id": "1VjD4ND46BOF3fXSC0bAyoMDuIwhJfcpLMAFpRRJMks4",
+          "type": "doc",
+          "url": "https://docs.google.com/document/d/1VjD4ND46BOF3fXSC0bAyoMDuIwhJfcpLMAFpRRJMks4/edit",
+          "path": "LinkedIn/02 - Prompt Injection Defense/Post"
+        },
+        {
+          "name": "Photo",
+          "id": "1Jv5TeixMKSFpqAzgeD8d7UKYj4hsmQHm",
+          "type": "doc",
+          "url": "https://docs.google.com/document/d/1Jv5TeixMKSFpqAzgeD8d7UKYj4hsmQHm/edit",
+          "path": "LinkedIn/02 - Prompt Injection Defense/Photo"
+        }
+      ]
+    },
+    {
+      "name": "LinkedIn/03 - The SOUL.md Concept",
+      "items": [
+        {
+          "name": "03 - The SOUL.md Concept",
+          "id": "1YH2TxiVnNx6Cw6mpYoWHHD2KLTBDyLL1",
+          "type": "doc",
+          "url": "https://docs.google.com/document/d/1YH2TxiVnNx6Cw6mpYoWHHD2KLTBDyLL1/edit",
+          "path": "LinkedIn/03 - The SOUL.md Concept"
+        },
+        {
+          "name": "Post",
+          "id": "1-gpcwYIGaCJ5QaH4x5h3ZsV6TYf0cCRBTzjL4Su5ylw",
+          "type": "doc",
+          "url": "https://docs.google.com/document/d/1-gpcwYIGaCJ5QaH4x5h3ZsV6TYf0cCRBTzjL4Su5ylw/edit",
+          "path": "LinkedIn/03 - The SOUL.md Concept/Post"
+        },
+        {
+          "name": "Photo",
+          "id": "1Huj56MIYZ1Az-_svrvOkUt2vt6Sn2UkZ",
+          "type": "doc",
+          "url": "https://docs.google.com/document/d/1Huj56MIYZ1Az-_svrvOkUt2vt6Sn2UkZ/edit",
+          "path": "LinkedIn/03 - The SOUL.md Concept/Photo"
+        }
+      ]
+    },
+    {
+      "name": "LinkedIn/04 - RentAHuman.ai",
+      "items": [
+        {
+          "name": "04 - RentAHuman.ai",
+          "id": "1eXgXpklKEFrdDGx0WpQfzMKvIMryKcxQ",
+          "type": "doc",
+          "url": "https://docs.google.com/document/d/1eXgXpklKEFrdDGx0WpQfzMKvIMryKcxQ/edit",
+          "path": "LinkedIn/04 - RentAHuman.ai"
+        },
+        {
+          "name": "Post",
+          "id": "1JjxN5mmYZabXC_i9vG1RAPUU5LNYSBDhR1yd3qodf-s",
+          "type": "doc",
+          "url": "https://docs.google.com/document/d/1JjxN5mmYZabXC_i9vG1RAPUU5LNYSBDhR1yd3qodf-s/edit",
+          "path": "LinkedIn/04 - RentAHuman.ai/Post"
+        },
+        {
+          "name": "Photo",
+          "id": "19DUHokt2K9R2z7CFW32y8qZWhJLhUnZ5",
+          "type": "doc",
+          "url": "https://docs.google.com/document/d/19DUHokt2K9R2z7CFW32y8qZWhJLhUnZ5/edit",
+          "path": "LinkedIn/04 - RentAHuman.ai/Photo"
+        }
+      ]
+    },
+    {
+      "name": "LinkedIn/05 - The Heartbeat (Proactive AI)",
+      "items": [
+        {
+          "name": "05 - The Heartbeat (Proactive AI)",
+          "id": "1fmRA_OGB1bGu3BfLRht512mo8-SpQ2ke",
+          "type": "doc",
+          "url": "https://docs.google.com/document/d/1fmRA_OGB1bGu3BfLRht512mo8-SpQ2ke/edit",
+          "path": "LinkedIn/05 - The Heartbeat (Proactive AI)"
+        },
+        {
+          "name": "Post",
+          "id": "1hQVuVv8f5KLuDnM9pe61ALVPV0AtpBgxfGi9L8ts3Mo",
+          "type": "doc",
+          "url": "https://docs.google.com/document/d/1hQVuVv8f5KLuDnM9pe61ALVPV0AtpBgxfGi9L8ts3Mo/edit",
+          "path": "LinkedIn/05 - The Heartbeat (Proactive AI)/Post"
+        },
+        {
+          "name": "Photo",
+          "id": "1fOQfOb61TsFGzwdrH93CF3JFabo9_Y6f",
+          "type": "doc",
+          "url": "https://docs.google.com/document/d/1fOQfOb61TsFGzwdrH93CF3JFabo9_Y6f/edit",
+          "path": "LinkedIn/05 - The Heartbeat (Proactive AI)/Photo"
+        }
+      ]
+    },
+    {
+      "name": "LinkedIn/06 - The Memory System (Infinite Memory)",
+      "items": [
+        {
+          "name": "06 - The Memory System (Infinite Memory)",
+          "id": "1bqFsoQxbsQ89A98Cbb5XQxD891otEvnM",
+          "type": "doc",
+          "url": "https://docs.google.com/document/d/1bqFsoQxbsQ89A98Cbb5XQxD891otEvnM/edit",
+          "path": "LinkedIn/06 - The Memory System (Infinite Memory)"
+        },
+        {
+          "name": "Post",
+          "id": "1d9XVIH-qkBLhAR5kjjisoxZFD8072_Sg2haHuiSAv2Q",
+          "type": "doc",
+          "url": "https://docs.google.com/document/d/1d9XVIH-qkBLhAR5kjjisoxZFD8072_Sg2haHuiSAv2Q/edit",
+          "path": "LinkedIn/06 - The Memory System (Infinite Memory)/Post"
+        },
+        {
+          "name": "Photo",
+          "id": "1ZpHOAi03gS41ikE01rnRRdtqlAIAY5R6",
+          "type": "doc",
+          "url": "https://docs.google.com/document/d/1ZpHOAi03gS41ikE01rnRRdtqlAIAY5R6/edit",
+          "path": "LinkedIn/06 - The Memory System (Infinite Memory)/Photo"
+        }
+      ]
+    },
+    {
+      "name": "Thumbnail Cutouts/shocked.png",
+      "items": [
+        {
+          "name": "shocked.png",
+          "id": "1_7HsvffNHOjqAcKDO9M59uTnz3SKJ8TT",
+          "type": "doc",
+          "url": "https://docs.google.com/document/d/1_7HsvffNHOjqAcKDO9M59uTnz3SKJ8TT/edit",
+          "path": "Thumbnail Cutouts/shocked.png"
+        }
+      ]
+    },
+    {
+      "name": "YouTube/YouTube Pipeline",
+      "items": [
+        {
+          "name": "YouTube Pipeline",
+          "id": "1NTxAqQ9P6hySt63HTAT7bdEV_sYgj5x-",
+          "type": "doc",
+          "url": "https://docs.google.com/document/d/1NTxAqQ9P6hySt63HTAT7bdEV_sYgj5x-/edit",
+          "path": "YouTube/YouTube Pipeline"
+        },
+        {
+          "name": "Script",
+          "id": "1NWGvh-wrRF6UMwf6lxnnZPxzxG6-DqT3zMNJ1jsZxw4",
+          "type": "doc",
+          "url": "https://docs.google.com/document/d/1NWGvh-wrRF6UMwf6lxnnZPxzxG6-DqT3zMNJ1jsZxw4/edit",
+          "path": "YouTube/YouTube Pipeline/Script"
+        },
+        {
+          "name": "B-Roll Doc",
+          "id": "1l48Ty3BY9CGUg_4tL7zw8J7xhcdglLYNkzyMh0nlUVI",
+          "type": "doc",
+          "url": "https://docs.google.com/document/d/1l48Ty3BY9CGUg_4tL7zw8J7xhcdglLYNkzyMh0nlUVI/edit",
+          "path": "YouTube/YouTube Pipeline/B-Roll Doc"
+        }
+      ]
+    }
+  ],
+  "notionContent": [
+    {
+      "name": "tars",
+      "id": "2fd05cc9-4e7f-81f2-83e2-d0127c7bd878",
+      "url": "https://notion.so/2fd05cc94e7f81f283e2d0127c7bd878"
+    },
+    {
+      "name": "content",
+      "id": "2fd05cc9-4e7f-8134-92cb-cfc3a2ceba9e",
+      "url": "https://notion.so/2fd05cc94e7f813492cbcfc3a2ceba9e"
+    },
+    {
+      "name": "youtube",
+      "id": "2fd05cc9-4e7f-8138-82a7-d171d9f4995e",
+      "url": "https://notion.so/2fd05cc94e7f813882a7d171d9f4995e"
+    },
+    {
+      "name": "instagram",
+      "id": "2fd05cc9-4e7f-81ed-9436-ecd9b1b6d061",
+      "url": "https://notion.so/2fd05cc94e7f81ed9436ecd9b1b6d061"
+    },
+    {
+      "name": "twitter",
+      "id": "2fd05cc9-4e7f-8149-8920-e8aac04a38f0",
+      "url": "https://notion.so/2fd05cc94e7f81498920e8aac04a38f0"
+    },
+    {
+      "name": "linkedin",
+      "id": "2fd05cc9-4e7f-8194-8774-d15a9b1b9ca7",
+      "url": "https://notion.so/2fd05cc94e7f81948774d15a9b1b9ca7"
+    },
+    {
+      "name": "tiktok",
+      "id": "2fd05cc9-4e7f-817f-868b-e4465ab1c2dd",
+      "url": "https://notion.so/2fd05cc94e7f817f868be4465ab1c2dd"
+    },
+    {
+      "name": "facebook",
+      "id": "2fd05cc9-4e7f-81a9-b2c8-e28b6cac1e48",
+      "url": "https://notion.so/2fd05cc94e7f81a9b2c8e28b6cac1e48"
+    },
+    {
+      "name": "threads",
+      "id": "2fd05cc9-4e7f-817f-bd59-f9d800aa4757",
+      "url": "https://notion.so/2fd05cc94e7f817fbd59f9d800aa4757"
+    },
+    {
+      "name": "blog",
+      "id": "2fd05cc9-4e7f-812a-9723-e31b4e98d1ec",
+      "url": "https://notion.so/2fd05cc94e7f812a9723e31b4e98d1ec"
+    },
+    {
+      "name": "youtube_openclaw_subagents",
+      "id": "2fd05cc9-4e7f-8174-9ebe-dd97cdb4d975",
+      "url": "https://notion.so/2fd05cc94e7f81749ebedd97cdb4d975"
+    },
+    {
+      "name": "youtube_openclaw_subagents_script",
+      "id": "2fd05cc9-4e7f-8107-9e98-cc347d8c3b59",
+      "url": "https://notion.so/2fd05cc94e7f81079e98cc347d8c3b59"
+    },
+    {
+      "name": "youtube_openclaw_subagents_agents_md",
+      "id": "2fd05cc9-4e7f-81ea-ad52-ce5ce9da7ac5",
+      "url": "https://notion.so/2fd05cc94e7f81eaad52ce5ce9da7ac5"
+    },
+    {
+      "name": "youtube_openclaw_subagents_soul_md",
+      "id": "2fd05cc9-4e7f-8105-a462-ddb0360e0f35",
+      "url": "https://notion.so/2fd05cc94e7f8105a462ddb0360e0f35"
+    },
+    {
+      "name": "youtube_how_openclaw_works",
+      "id": "2fd05cc9-4e7f-812a-9e03-fddc0f6bc7d9",
+      "url": "https://notion.so/2fd05cc94e7f812a9e03fddc0f6bc7d9"
+    },
+    {
+      "name": "youtube_how_openclaw_works_script",
+      "id": "2fd05cc9-4e7f-81d5-9504-e010908206a5",
+      "url": "https://notion.so/2fd05cc94e7f81d59504e010908206a5"
+    },
+    {
+      "name": "linkedin_posts / 01 - How OpenClaw Works (Architecture) / folder",
+      "id": "2fd05cc9-4e7f-81e7-b256-d92cba02161e",
+      "url": "https://notion.so/2fd05cc94e7f81e7b256d92cba02161e"
+    },
+    {
+      "name": "linkedin_posts / 01 - How OpenClaw Works (Architecture) / post",
+      "id": "2fd05cc9-4e7f-818e-bf19-d0a4d1fa010f",
+      "url": "https://notion.so/2fd05cc94e7f818ebf19d0a4d1fa010f"
+    },
+    {
+      "name": "linkedin_posts / 02 - Prompt Injection Defense / folder",
+      "id": "2fd05cc9-4e7f-817c-ab5b-e2691c9ab97d",
+      "url": "https://notion.so/2fd05cc94e7f817cab5be2691c9ab97d"
+    },
+    {
+      "name": "linkedin_posts / 02 - Prompt Injection Defense / post",
+      "id": "2fd05cc9-4e7f-8103-9ad2-f3f86ac98a46",
+      "url": "https://notion.so/2fd05cc94e7f81039ad2f3f86ac98a46"
+    },
+    {
+      "name": "linkedin_posts / 03 - The SOUL.md Concept / folder",
+      "id": "2fd05cc9-4e7f-8172-8a22-c7a45cf98650",
+      "url": "https://notion.so/2fd05cc94e7f81728a22c7a45cf98650"
+    },
+    {
+      "name": "linkedin_posts / 03 - The SOUL.md Concept / post",
+      "id": "2fd05cc9-4e7f-81a7-a39e-e10d3b31324a",
+      "url": "https://notion.so/2fd05cc94e7f81a7a39ee10d3b31324a"
+    },
+    {
+      "name": "linkedin_posts / 04 - RentAHuman.ai / folder",
+      "id": "2fd05cc9-4e7f-81af-9af2-cd39c6c539a6",
+      "url": "https://notion.so/2fd05cc94e7f81af9af2cd39c6c539a6"
+    },
+    {
+      "name": "linkedin_posts / 04 - RentAHuman.ai / post",
+      "id": "2fd05cc9-4e7f-8131-8565-fdcb9768b704",
+      "url": "https://notion.so/2fd05cc94e7f81318565fdcb9768b704"
+    },
+    {
+      "name": "linkedin_posts / 05 - The Heartbeat (Proactive AI) / folder",
+      "id": "2fd05cc9-4e7f-81e8-862c-e10567f0034e",
+      "url": "https://notion.so/2fd05cc94e7f81e8862ce10567f0034e"
+    },
+    {
+      "name": "linkedin_posts / 05 - The Heartbeat (Proactive AI) / post",
+      "id": "2fd05cc9-4e7f-819a-9536-ef2b511a081c",
+      "url": "https://notion.so/2fd05cc94e7f819a9536ef2b511a081c"
+    },
+    {
+      "name": "linkedin_posts / 06 - The Memory System (Infinite Memory) / folder",
+      "id": "2fd05cc9-4e7f-81c2-af36-ef6762db2b1a",
+      "url": "https://notion.so/2fd05cc94e7f81c2af36ef6762db2b1a"
+    },
+    {
+      "name": "linkedin_posts / 06 - The Memory System (Infinite Memory) / post",
+      "id": "2fd05cc9-4e7f-81b0-b9d7-db433ad7729d",
+      "url": "https://notion.so/2fd05cc94e7f81b0b9d7db433ad7729d"
+    },
+    {
+      "name": "recording_sop",
+      "id": "2fd05cc9-4e7f-81aa-9180-ee9a16782f5a",
+      "url": "https://notion.so/2fd05cc94e7f81aa9180ee9a16782f5a"
+    },
+    {
+      "name": "thumbnail_cutouts",
+      "id": "2fd05cc9-4e7f-8183-aaf0-ef78546979c9",
+      "url": "https://notion.so/2fd05cc94e7f8183aaf0ef78546979c9"
+    },
+    {
+      "name": "youtube_youtube_pipeline",
+      "id": "2fd05cc9-4e7f-810e-a97a-cd56f640ace0",
+      "url": "https://notion.so/2fd05cc94e7f810ea97acd56f640ace0"
+    },
+    {
+      "name": "youtube_youtube_pipeline_script",
+      "id": "2fd05cc9-4e7f-81ec-a8d8-d83200d050e7",
+      "url": "https://notion.so/2fd05cc94e7f81eca8d8d83200d050e7"
+    }
+  ],
+  "recentActivity": [
+    {
+      "timestamp": "2026-02-04T11:26:00.293Z",
+      "agent": "Stack",
+      "agentId": "coder",
+      "action": "Responded: \"Now let me build the snapshot script that reads all local data:\"",
+      "type": "response"
+    },
+    {
+      "timestamp": "2026-02-04T11:25:29.870Z",
+      "agent": "TARS",
+      "agentId": "main",
+      "action": "Responded: \"\n\n\"",
+      "type": "response"
+    },
+    {
+      "timestamp": "2026-02-04T11:25:25.973Z",
+      "agent": "TARS",
+      "agentId": "main",
+      "action": "Received: \"[Telegram Jess Mason (@JessAutomates) id:7388810030 +2m 2026-02-04 11:25 UTC] yeah its good\n[message...\"",
+      "type": "input"
+    },
+    {
+      "timestamp": "2026-02-04T11:25:00.130Z",
+      "agent": "Stack",
+      "agentId": "coder",
+      "action": "Responded: \"Now let me create all the project files. I'll build everything at once:\"",
+      "type": "response"
+    },
+    {
+      "timestamp": "2026-02-04T11:24:39.340Z",
+      "agent": "Stack",
+      "agentId": "coder",
+      "action": "Responded: \"Let me create the project manually - faster and more control.\"",
+      "type": "response"
+    },
+    {
+      "timestamp": "2026-02-04T11:23:51.580Z",
+      "agent": "Stack",
+      "agentId": "coder",
+      "action": "Responded: \"Now I have a clear picture of all the data structures. Let me build the dashboard.\"",
+      "type": "response"
+    },
+    {
+      "timestamp": "2026-02-04T11:23:19.088Z",
+      "agent": "TARS",
+      "agentId": "main",
+      "action": "Responded: \"Stack's on it. Building a full agent activity dashboard:\n\n- **Agent status cards** — TARS, Hook, Sta...\"",
+      "type": "response"
+    },
+    {
+      "timestamp": "2026-02-04T11:23:18.141Z",
+      "agent": "Stack",
+      "agentId": "coder",
+      "action": "Responded: \"\n\n\"",
+      "type": "response"
+    },
+    {
+      "timestamp": "2026-02-04T11:23:12.891Z",
+      "agent": "Stack",
+      "agentId": "coder",
+      "action": "Received: \"Build and deploy a fully functioning **Agent Activity Dashboard** to Vercel. This is a real-time mon...\"",
+      "type": "input"
+    },
+    {
+      "timestamp": "2026-02-04T11:22:43.505Z",
+      "agent": "TARS",
+      "agentId": "main",
+      "action": "Received: \"[Telegram Jess Mason (@JessAutomates) id:7388810030 +2m 2026-02-04 11:22 UTC] aside from all of this...\"",
+      "type": "input"
+    },
+    {
+      "timestamp": "2026-02-04T11:20:18.978Z",
+      "agent": "TARS",
+      "agentId": "main",
+      "action": "Responded: \"Added. From now on:\n- **Scripts/docs** → Drive link sent directly in Telegram\n- **Thumbnail headline...\"",
+      "type": "response"
+    },
+    {
+      "timestamp": "2026-02-04T11:19:57.642Z",
+      "agent": "TARS",
+      "agentId": "main",
+      "action": "Received: \"[Telegram Jess Mason (@JessAutomates) id:7388810030 +1m 2026-02-04 11:19 UTC] another addition to th...\"",
+      "type": "input"
+    },
+    {
+      "timestamp": "2026-02-04T11:18:41.607Z",
+      "agent": "TARS",
+      "agentId": "main",
+      "action": "Responded: \"NO_REPLY\"",
+      "type": "response"
+    },
+    {
+      "timestamp": "2026-02-04T11:18:39.474Z",
+      "agent": "TARS",
+      "agentId": "main",
+      "action": "Responded: \"✅ Hook updated the script. Added a new \"Stage 5 — THE GLUE\" section (1:45) covering the full automat...\"",
+      "type": "response"
+    },
+    {
+      "timestamp": "2026-02-04T11:18:33.235Z",
+      "agent": "TARS",
+      "agentId": "main",
+      "action": "Received: \"A background task \"hook-pipeline-script-update\" just completed successfully.\n\nFindings:\nDone. Here's...\"",
+      "type": "input"
+    },
+    {
+      "timestamp": "2026-02-04T11:18:32.971Z",
+      "agent": "Hook",
+      "agentId": "hook",
+      "action": "Responded: \"Done. Here's what I did:\n\n**Added Stage 5 — THE GLUE (7:30–9:15)** — a full 1:45 section with four s...\"",
+      "type": "response"
+    },
+    {
+      "timestamp": "2026-02-04T11:18:18.093Z",
+      "agent": "Hook",
+      "agentId": "hook",
+      "action": "Responded: \"Script looks clean. Now let me sync it:\"",
+      "type": "response"
+    },
+    {
+      "timestamp": "2026-02-04T11:18:14.582Z",
+      "agent": "Hook",
+      "agentId": "hook",
+      "action": "Responded: \"Let me verify the final script looks clean:\"",
+      "type": "response"
+    },
+    {
+      "timestamp": "2026-02-04T11:18:11.835Z",
+      "agent": "Hook",
+      "agentId": "hook",
+      "action": "Responded: \"Now add a pacing note for the new section:\"",
+      "type": "response"
+    },
+    {
+      "timestamp": "2026-02-04T11:17:54.887Z",
+      "agent": "Hook",
+      "agentId": "hook",
+      "action": "Responded: \"Now let me add the new b-roll assets needed for the orchestration section to the production notes:\"",
+      "type": "response"
+    },
+    {
+      "timestamp": "2026-02-04T11:16:59.117Z",
+      "agent": "Hook",
+      "agentId": "hook",
+      "action": "Responded: \"Now I'll expand Stage 5 and adjust the surrounding sections. The current Stage 5 is only 30 seconds ...\"",
+      "type": "response"
+    },
+    {
+      "timestamp": "2026-02-04T11:16:46.172Z",
+      "agent": "TARS",
+      "agentId": "main",
+      "action": "Responded: \"Hook's updating the script now with the full automation layer. I'll message you the moment he's done...\"",
+      "type": "response"
+    },
+    {
+      "timestamp": "2026-02-04T11:16:45.241Z",
+      "agent": "Hook",
+      "agentId": "hook",
+      "action": "Responded: \"\n\n\"",
+      "type": "response"
+    },
+    {
+      "timestamp": "2026-02-04T11:16:42.980Z",
+      "agent": "Hook",
+      "agentId": "hook",
+      "action": "Received: \"UPDATE the existing video script at `/root/clawd/scripts/video-scripts/youtube-pipeline.md`.\n\n**What...\"",
+      "type": "input"
+    },
+    {
+      "timestamp": "2026-02-04T11:16:42.787Z",
+      "agent": "TARS",
+      "agentId": "main",
+      "action": "Responded: \"Sending this to Hook to weave the automation layer into the script properly.\"",
+      "type": "response"
+    },
+    {
+      "timestamp": "2026-02-04T11:16:09.804Z",
+      "agent": "TARS",
+      "agentId": "main",
+      "action": "Received: \"[Telegram Jess Mason (@JessAutomates) id:7388810030 +1m 2026-02-04 11:16 UTC] add this to the youtub...\"",
+      "type": "input"
+    },
+    {
+      "timestamp": "2026-02-04T11:14:58.577Z",
+      "agent": "TARS",
+      "agentId": "main",
+      "action": "Responded: \"Here's the full pipeline, end to end:\n\n**🎬 YouTube Video Pipeline**\n\n**Step 0: Initialization** (au...\"",
+      "type": "response"
+    },
+    {
+      "timestamp": "2026-02-04T11:14:38.461Z",
+      "agent": "TARS",
+      "agentId": "main",
+      "action": "Received: \"System: [2026-02-04 11:12:30 UTC] Exec completed (grand-mi, code 0) :: f640ace0 Notion script page: ...\"",
+      "type": "input"
+    },
+    {
+      "timestamp": "2026-02-04T11:14:21.111Z",
+      "agent": "TARS",
+      "agentId": "main",
+      "action": "Responded: \"Done. Here's what I built:\n\n**🔧 Pipeline is now fully automated:**\n\n1. **`init-video-pipeline.js`**...\"",
+      "type": "response"
+    },
+    {
+      "timestamp": "2026-02-04T11:14:13.534Z",
+      "agent": "TARS",
+      "agentId": "main",
+      "action": "Responded: \"Now update the pipeline rules with the full automated flow:\"",
+      "type": "response"
+    }
+  ],
+  "systemStats": {
+    "uptime": "8d 15h",
+    "uptimeSeconds": 746162.09,
+    "vpsCost": "$15/mo",
+    "videosProduced": 3,
+    "totalTokens": 312305059,
+    "totalCost": 273.03,
+    "totalSessions": 15,
+    "snapshotTime": "2026-02-04T11:26:03.221Z"
+  },
+  "generatedAt": "2026-02-04T11:26:03.221Z"
+}
