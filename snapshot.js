@@ -259,6 +259,22 @@ function getRecentActivity() {
     }
   }
 
+  // Sanitize: strip chat IDs, phone numbers, and personal identifiers from activity text
+  const REDACT_PATTERNS = [
+    /\b\d{10,13}\b/g,                    // Chat IDs / phone numbers (10-13 digits)
+    /telegram:\d+/gi,                     // telegram:1234567890
+    /id:\d{7,}/g,                         // id:7388810030
+    /@\w+/g,                              // @usernames
+  ];
+  
+  for (const activity of activities) {
+    if (activity.action) {
+      for (const pattern of REDACT_PATTERNS) {
+        activity.action = activity.action.replace(pattern, '[redacted]');
+      }
+    }
+  }
+
   // Sort by timestamp descending and take last 30
   return activities
     .filter(a => a.timestamp)
